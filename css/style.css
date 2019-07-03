@@ -520,6 +520,23 @@ ol {
 	left: -118px;
 }
 
+.resume-list li ul li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.resume-list li ul li:after {
+	list-style: none;
+	position: absolute;
+	content: '';
+	width: 5px;
+	height: 5px;
+	margin-left: 50px;
+	padding-left: 10px;
+	border-left: 2px solid #40424a;
+}
+
 .resume-list h2 {
 	font-size: 72px;
 	margin-bottom: 10px;
@@ -537,6 +554,9 @@ ol {
 	margin-bottom: 0;
 }
 
+.resume-item-list li {
+	
+}
 /*---------------------
 	Review section
 -----------------------*/
