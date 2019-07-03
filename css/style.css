@@ -206,12 +206,16 @@ ol {
 	text-align: center;
 	margin-top: 55px;
 }
-
+.circle-progress .prog-title h2
+{
+	color: #40424a !important;
+	font-size: 36px;
+	text-transform: uppercase;
+}
 .circle-progress .prog-title h3 {
 	font-size: 16px;
 	text-transform: uppercase;
 }
-
 .circle-progress .prog-title p {
 	font-size: 15px;
 	color: #808181 !important;
@@ -238,7 +242,7 @@ ol {
 
 /* Fact box */
 .fact-box {
-	height: 375px;
+	height: 325px;
 	display: table;
 	width: 100%;
 	background: #40424a;
@@ -647,7 +651,7 @@ ol {
 .portfolio-item .port-pic {
 	margin-bottom: 30px;
 	display: block;
-	height: 480px;
+	height: 320px;
 	background: transparent;
 	background-position: center center;
 	background-size: cover;
