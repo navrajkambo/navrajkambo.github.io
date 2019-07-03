@@ -560,6 +560,7 @@ ol {
 /*---------------------
 	Review section
 -----------------------*/
+/*
 .review-slider {
 	padding-left: 150px;
 }
@@ -578,7 +579,30 @@ ol {
 	background: #cacaca;
 	margin-bottom: 15px;
 }
+*/
 
+.review-slider {
+	padding-left: 0px;
+}
+
+.review-slider .owl-dots {
+	position: relative;
+	left: 0;
+	top: 0;
+	padding-top: 20px;
+}
+
+.review-slider .owl-dots .owl-dot {
+	display: inline-block;
+	margin-right: 15px;
+	background: #cacaca;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #40424a;
+	border-radius: 50px;
+	
+	/*border: none;*/
+}
 .review-slider .owl-dots .owl-dot.active {
 	background: #40424a;
 }
@@ -624,7 +648,7 @@ ol {
 	margin-bottom: 30px;
 	display: block;
 	height: 480px;
-	background: #333;
+	background: transparent;
 	background-position: center center;
 	background-size: cover;
 	overflow: hidden;
@@ -646,8 +670,8 @@ ol {
 	transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
 }
 
-.portfolio-item:hover .port-pic:after {
-	opacity: 0.8;
+.portfolio-item .single-review:hover .port-pic:after {
+	opacity: 0.2;
 	height: 100%;
 	top: 0;
 }
