@@ -19,6 +19,17 @@ $(window).on('load', function() {
 
 });
 
+function emailMe (form) {
+    var Name = form.Name.value;
+	var Email = form.Email.value;
+	var Message = form.MSG.value;
+	var Sub = form.Subject.value;
+	var SentString = "mailto:nkambo1@my.bcit.ca?subject=Web|"+Sub+"|"+Email+"&body=<br>From "+Name+", "+Message;
+	win = window.open(SentString, 'emailWindow');
+    if (win && win.open && !win.closed) win.close();
+    //alert ("Your message has been sent " + Name+".");
+	alert (SentString);
+}
 
 (function($) {
 
