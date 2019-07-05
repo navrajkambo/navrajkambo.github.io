@@ -28,7 +28,7 @@ function emailMe (form) {
 	win = window.open(SentString, 'emailWindow');
     if (win && win.open && !win.closed) win.close();
     //alert ("Your message has been sent " + Name+".");
-	alert (SentString);
+	alert ("This feature is still being tested. In the mean time, send me an email at nkambo1@my.bcit.ca");
 }
 
 (function($) {
@@ -46,6 +46,8 @@ function emailMe (form) {
 		loop: true,
 		nav: false,
 		dots: true,
+		video:true,
+        lazyLoad:true,
 		items: 1,
 		autoplay: false
 	});
