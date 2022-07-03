@@ -7,7 +7,9 @@
 	<meta name="keywords" content="navraj, singh, kambo, burnaby, electrical, engineer, vancouver, github, pages, portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="eiu-KF5kxK85Mj9rIRDdysGViFOVe_83K9E0eaChW94" />
-
+	
+	<script src="customScripts.js"></script>
+	
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
 
@@ -26,7 +28,6 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -53,7 +54,7 @@
 		</div>
 	</header>
 	<!-- Header section end -->
-
+	
 	<!-- Hero section start -->
 	<section class="hero-section spad">
 		<div class="container-fluid">
@@ -63,9 +64,21 @@
 						<div class="col-lg-6">
 							<div class="hero-text">
 								<h2>Hi,</h2>
-								<p>I'm a 22 year old </*recent*/>electrical engineer</*ing graduate*/>, hoping to expand my horizons!</p>
+								<p id="age"></p>
 								<p></*In my free time, I like to tinker with electronics, play sports, and volunteer. */>Take a look at my projects section if you have a minute, you might be interested in some of the stuff I've done! In fact, I might be working on something right now...</p>
 							</div>
+							<script>
+								function diff_years(dt2, dt1) 
+								{
+									var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+									diff /= (60 * 60 * 24);
+									return Math.abs(Math.round(diff/365.25));   
+								}
+								text1="";
+								dt1 = new Date(1997,4,17);
+								dt2 = new Date();
+								document.getElementById('age').innerHTML = text1.concat("I'm a ",diff_years(dt1, dt2)," year old electrical engineer, hoping to expand my horizons!");
+							</script>
 							<div class="hero-info">
 								<h2>General Info</h2>
 								<ul>
@@ -133,15 +146,26 @@
 					<p>​I'm currently looking to accelerate my career in electrical engineering, with an interest in either the automation and controls, power systems analysis, or embedded systems industries.</p>
 					<ul class="resume-list">
 						<li>
+							<h3>Wellons Canada</h3>
+							<h4>Electrical Engineer EIT</h4>
+							<h4><i>April 2022 - Present</i></h4>
+							<ul>
+								<li>Create construction documents and P&IDs for bio-mass and natural gas energy systems</li>
+								<li>Debug Rockwell PLC and HMI programs for lumber dry kilns</li>
+								<li>Design MCC single-line diagrams, control schematics, and CSA B149.3:20 compliant gas trains</li>
+								<li>Carry out commissioning duties at customer site and supervise construction</li>
+							</ul>
+						</li>
+						<li>
 							<h3>Apex Motion Control</h3>
 							<h4>Design Engineer</h4>
-							<h4><i>August 2019 - Present</i></h4>
+							<h4><i>August 2019 - April 2022</i></h4>
 							<ul>
-								<li>Contributed in the design, implementation, and testing of the Apex Tray Feeder</li>
-								<li>Collaborated in bakery related robotics applications including decorating and baking product racking</li>
-								<li>Assisted project engineers in robotic  R&D, PLC programming, and BakerBot HMI development in Python</li>
+								<li>Carried out project management of collaborative robotic cells for the food and beverage industry</li>
+								<li>Brainstormed robotic movements and formulated programs for decorating and pick & place applications</li>
+								<li>Composed CEC compliant electrical schematics, 3D panel layout, and wired three-phase electrical panels</li>
 								<li>Designed mechanical devices such as end-effectors and locating mechanisms, and created assembly layout drawings in SolidWorks</li>
-								<li>Learned and utilized industrial standards such Modbus, CANopen, and IEC 61131-3 (ST, SFC, LD)</li>
+								<li>Created stainless-steel robotic frames and sanitary conveyors based on project scope and requirements</li>
 							</ul>
 						</li>
 						<li>
@@ -178,7 +202,7 @@
 									<li>Installed, and tested data cabling for data and voice systems</li>
 									<li>Labeled and assembled patch panel assemblies, and upgraded wireless networking equipment</li>
 									<li>Terminated AMP and Belden shielded/unshielded category cables with proprietary tools</li>
-									<li>Worked along side Sr Technicians, Electricians and UBC IT services on various projects</li>
+									<li>Worked along side Sr Technicians, Electricians and UBC IT services on various construction projects</li>
 									<li>Learned and applied de-facto standards in the telecommunications installation industry</li>
 								</ul>
 							</p>
@@ -390,7 +414,7 @@
 					<div class="col-xl-6 col-lg-6 col-md-6">
 						<div class="portfolio-item">
 							<h1>Autonomous Vineyard Harvesting</h1>
-							<p>Our senior engineering capstone group aimed to improve on current grape picking systems by developing a robotic vehicle that can harvest grape crops autonomously and selectively. It was required to navigate a vineyard without the need for human intervention, work during all times of the day, and successfully detect and harvest wine grape crops using cutting-edge vision technologies, robotics, and various engineering methods we’ve acquired at BCIT. We were able to create and demonstrate the proof-of-concept autonomous vehicle utilizing a robotic arm and custom cutting end-effector.</p>
+							<p>Our senior engineering capstone group aimed to improve on current grape picking systems by developing a robotic vehicle that can harvest grape crops autonomously and selectively. It was required to navigate a vineyard without the need for human intervention, work during all times of the day, and successfully detect and harvest wine grape crops using cutting-edge vision technologies, robotics, and various engineering methods we’ve acquired at BCIT. We were able to create and demonstrate the proof-of-concept autonomous vehicle utilizing a robotic arm and custom cutting end-effector. Read our <a href="documents/ELEX7790_VineBot_Proposal_rr.pdf" target="_blank" >capstone proposal</a> and <a href="documents/ELEX7890_VineBot_Final_Report_rr.pdf" target="_blank" >final report</a> for more information.</p>
 						</div>
 					</div>
 				</div>
