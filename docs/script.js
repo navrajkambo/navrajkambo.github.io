@@ -260,7 +260,7 @@ class LazyImageLoader {
 // Markdown content loader
 class MarkdownLoader {
     constructor() {
-        this.sections = ['about', 'news', 'publications', 'resources', 'resume'];
+        this.sections = ['about', 'mentors', 'projects', 'resources', 'resume'];
         this.init();
     }
 
@@ -369,7 +369,7 @@ class MarkdownLoader {
     }
 }
 
-// Hover effect for letter 'b' and 'B'
+// Hover effect for letter 'n' and 'N'
 (function() {
     function applyBHoverEffect(root) {
         const targetRoot = root || document.body;
@@ -381,7 +381,7 @@ class MarkdownLoader {
             {
                 acceptNode(node) {
                     const value = node.nodeValue;
-                    if (!value || (value.indexOf('b') === -1 && value.indexOf('B') === -1)) {
+                    if (!value || (value.indexOf('n') === -1 && value.indexOf('N') === -1)) {
                         return NodeFilter.FILTER_REJECT;
                     }
                     const parent = node.parentNode;
@@ -411,7 +411,7 @@ class MarkdownLoader {
 
             for (let i = 0; i < text.length; i++) {
                 const ch = text[i];
-                if (ch === 'b' || ch === 'B') {
+                if (ch === 'n' || ch === 'N') {
                     if (buffer) {
                         fragment.appendChild(document.createTextNode(buffer));
                         buffer = '';
@@ -438,7 +438,7 @@ class MarkdownLoader {
     window.applyBHoverEffect = applyBHoverEffect;
 })();
 
-// Bee spawning when clicking on a 'b'/'B'
+// Bee spawning when clicking on a 'n'/'N'
 (function() {
     function spawnBeeFromElement(el) {
         const rect = el.getBoundingClientRect();
@@ -500,6 +500,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add loading state management
     document.body.classList.add('loaded');
     
+    // Add project image viewer feature 
+    new ProjectImageViewer();
+
     // Console message for developers
     console.log('🌵 Portfolio site loaded successfully!');
     console.log('🎉 Click the logo for a party surprise!');
@@ -726,3 +729,183 @@ prefersReducedMotion.addEventListener('change', () => {
         document.documentElement.style.setProperty('scroll-behavior', 'smooth');
     }
 });
+
+class ProjectImageViewer {
+    constructor() {
+        this.modal = document.getElementById('image-modal');
+        this.track = this.modal.querySelector('.image-modal-scroll');
+        this.closeButton = this.modal.querySelector('.image-modal-close');
+        this.prevButton = this.modal.querySelector('.carousel-prev');
+        this.nextButton = this.modal.querySelector('.carousel-next');
+
+        this.currentIndex = 0;
+        this.slides = [];
+        this.isDragging = false;
+        this.startX = 0;
+        this.currentTranslate = 0;
+
+        this.attachEvents();
+    }
+
+    attachEvents() {
+        document.addEventListener('click', (e) => {
+            const trigger = e.target.closest('[data-gallery]');
+            if (trigger) {
+                e.preventDefault();
+                this.openGallery(trigger.dataset.gallery);
+            }
+        });
+
+        this.closeButton.addEventListener('click', () => this.close());
+        this.modal.querySelector('.image-modal-overlay')
+            .addEventListener('click', () => this.close());
+
+        this.prevButton.addEventListener('click', () => this.prev());
+        this.nextButton.addEventListener('click', () => this.next());
+
+        document.addEventListener('keydown', (e) => {
+            if (!this.modal.classList.contains('active')) return;
+
+            if (e.key === 'Escape') this.close();
+            if (e.key === 'ArrowRight') this.next();
+            if (e.key === 'ArrowLeft') this.prev();
+        });
+
+        // Swipe support
+        // this.track.addEventListener('pointerdown', this.startDrag.bind(this));
+        // this.track.addEventListener('pointermove', this.drag.bind(this));
+        // this.track.addEventListener('pointerup', this.endDrag.bind(this));
+        // this.track.addEventListener('pointerleave', this.endDrag.bind(this));
+        // Enable swipe only on touch devices
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            this.track.addEventListener('touchstart', this.startTouch.bind(this), { passive: true });
+            this.track.addEventListener('touchmove', this.touchMove.bind(this), { passive: true });
+            this.track.addEventListener('touchend', this.endTouch.bind(this));
+        }
+    }
+
+    openGallery(galleryId) {
+        const gallery = document.querySelector(
+            `.project-gallery-data[data-gallery="${galleryId}"]`
+        );
+        if (!gallery) return;
+
+        this.track.innerHTML = '';
+        this.currentIndex = 1;
+
+        const items = Array.from(gallery.querySelectorAll('img, iframe'));
+
+        const createSlide = (item) => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'modal-media-wrapper';
+            wrapper.appendChild(item.cloneNode(true));
+            return wrapper;
+        };
+
+        // Clone last slide for infinite loop
+        this.track.appendChild(createSlide(items[items.length - 1]));
+
+        // Real slides
+        items.forEach(item => {
+            this.track.appendChild(createSlide(item));
+        });
+
+        // Clone first slide for infinite loop
+        this.track.appendChild(createSlide(items[0]));
+
+        this.slides = this.track.children;
+        this.updatePosition(false);
+
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    updatePosition(animate = true) {
+        this.track.style.transition = animate ? 'transform 0.4s ease' : 'none';
+        this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+    }
+
+    next() {
+        this.currentIndex++;
+        this.updatePosition(true);
+        this.checkLoop();
+    }
+
+    prev() {
+        this.currentIndex--;
+        this.updatePosition(true);
+        this.checkLoop();
+    }
+
+    checkLoop() {
+        setTimeout(() => {
+            if (this.currentIndex === 0) {
+                this.currentIndex = this.slides.length - 2;
+                this.updatePosition(false);
+            }
+            if (this.currentIndex === this.slides.length - 1) {
+                this.currentIndex = 1;
+                this.updatePosition(false);
+            }
+        }, 400);
+    }
+
+    startDrag(e) {
+        this.isDragging = true;
+        this.startX = e.clientX;
+        this.track.style.transition = 'none';
+    }
+
+    drag(e) {
+        if (!this.isDragging) return;
+        const delta = e.clientX - this.startX;
+        this.track.style.transform =
+            `translateX(calc(-${this.currentIndex * 100}% + ${delta}px))`;
+    }
+
+    endDrag(e) {
+        if (!this.isDragging) return;
+        this.isDragging = false;
+
+        const delta = e.clientX - this.startX;
+
+        if (delta > 50) this.prev();
+        else if (delta < -50) this.next();
+        else this.updatePosition(true);
+    }
+
+    startTouch(e) {
+        this.startX = e.touches[0].clientX;
+        this.isDragging = true;
+        this.track.style.transition = 'none';
+    }
+
+    touchMove(e) {
+        if (!this.isDragging) return;
+
+        const currentX = e.touches[0].clientX;
+        const delta = currentX - this.startX;
+
+        this.track.style.transform =
+            `translateX(calc(-${this.currentIndex * 100}% + ${delta}px))`;
+    }
+
+    endTouch(e) {
+        if (!this.isDragging) return;
+
+        this.isDragging = false;
+
+        const endX = e.changedTouches[0].clientX;
+        const delta = endX - this.startX;
+
+        if (delta > 50) this.prev();
+        else if (delta < -50) this.next();
+        else this.updatePosition(true);
+    }
+
+    close() {
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+

@@ -1,8 +1,8 @@
 # Portfolio
 
-My personal portfolio website showcasing research in AI Safety and Machine Learning.
+My personal portfolio website showcasing my work experience in Electronics, Robotics, and Automation.
 
-**Live site:** [jrosser.co.uk](https://jrosseruk.github.io)
+**Live site:** [navrajkambo.github.io](https://navrajkambo.github.io)
 
 ## Preview
 
@@ -20,12 +20,15 @@ My personal portfolio website showcasing research in AI Safety and Machine Learn
 ```bash
 # Serve locally
 python -m http.server 8000 -d docs/
+
+# Hard Refresh
+CTRL + F5
 ```
 
 ## Structure
 
 - `docs/index.html` - Main page
-- `docs/*.md` - Content (about, publications, resume)
+- `docs/*.md` - Content (about, projects, resume)
 - `docs/styles.css` - Styling
 - `docs/script.js` - Functionality
 
