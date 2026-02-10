@@ -1,7 +1,7 @@
 <div class="about-header">
-  <img src="assets/profile.jpg" alt="Portrait of N Kambo" class="about-avatar" width="160" height="160" loading="lazy" />
+  <img src="assets/profile.jpg" alt="Portrait of N S Kambo" class="about-avatar" width="320" height="320" loading="lazy" />
   <div class="about-header-content">
-    <h1 class="title">Hi I'm Navaj!</h1>
+    <h1 class="title">Hi I'm Navraj!</h1>
     <div class="about-socials" style="display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:0.5rem;">
   <!-- <a href="https://scholar.google.com/citations?user=OVXyJ5MAAAAJ&hl=en" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--color-accent-2);">
     <svg viewBox="0 0 24 24" role="img" aria-hidden="true" style="width:20px;height:20px;opacity:0.9;" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -34,6 +34,6 @@
 
 I'm a 28 year old **Electronics/Mechatronics Engineer (EIT) from Burnaby BC**. Professionally, I've worked on things ranging from writing **firmware and low level drivers for (ARM based) MCU and peripheral products**, to helping design and comission **electrical systems for wood drying kilns in the lumber industry**, to designing and building **robotic cells for the food and beverage industry**.
 
-I'm currently working at **Delta Intelligent Building Technologies (Canada) Inc** as part of the **Test and Automation Group** - an influence function-guided model poisoning framework. I'm participating in **Neel Nanda's MATS 10.0 Exploration Phase** and recently served as a **Teaching Assistant for ARENA 7.0** (Mechanistic Interpretability week).
+I'm currently working at **Delta Intelligent Building Technologies (Canada) Inc** as part of the **Test and Automation Group** - a multi-disciplined group consisting of mechanical, electrical, software, and firmware designers. The team is responsible for creating and maintaining the testing infrastructure used in Manufacturing, as well as improving operational efficiency, shortening test time, and improving yields through automated test fixtures and assembly line tools. Our team works on products from initial concept to physical realization.
 
-Previously, I was a student at **British Columbia Institute of Technology** and worked with faculty members in the Physics and ECET departments on a **Non-distructive method for concerete masonry testing** as part of a School of Energy directive.
+Previously, I was a student at **British Columbia Institute of Technology** and worked with faculty members different departments on a **Non-distructive method for concerete masonry testing** as part of a **School of Energy (SoE)** research project.
