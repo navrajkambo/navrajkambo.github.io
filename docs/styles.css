@@ -1347,3 +1347,74 @@ html {
         padding: 0.5rem;
     }
 }
+
+/* Hide gallery data */
+.project-gallery-data {
+    display: none;
+}
+
+/* Modal base */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-modal.active {
+    display: flex;
+}
+
+/* Overlay */
+.image-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+/* Modal content */
+.image-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    margin: 5vh auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Modal scroll container now behaves like a vertical slider */
+.image-modal-scroll {
+    display: block;          /* not flex */
+    height: 100%;
+    overflow-y: auto;        /* vertical scroll */
+    overflow-x: hidden;      /* no horizontal scroll */
+    padding: 2rem;
+}
+
+/* Each media item is a slide */
+.modal-media-wrapper {
+    margin-bottom: 2rem;     /* spacing between items */
+}
+
+/* Images & iframes fill the wrapper */
+.modal-media-wrapper img,
+.modal-media-wrapper iframe {
+    width: 100%;
+    max-height: none;
+    object-fit: contain;
+}
+
+/* Close button */
+.image-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

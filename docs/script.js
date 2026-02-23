@@ -500,6 +500,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add loading state management
     document.body.classList.add('loaded');
     
+    // Add project image viewer feature 
+    new ProjectImageViewer();
+
     // Console message for developers
     console.log('🌵 Portfolio site loaded successfully!');
     console.log('🎉 Click the logo for a party surprise!');
@@ -726,3 +729,63 @@ prefersReducedMotion.addEventListener('change', () => {
         document.documentElement.style.setProperty('scroll-behavior', 'smooth');
     }
 });
+
+class ProjectImageViewer {
+    constructor() {
+        this.modal = document.getElementById('image-modal');
+        this.scrollContainer = this.modal.querySelector('.image-modal-scroll');
+        this.closeButton = this.modal.querySelector('.image-modal-close');
+
+        this.attachEvents();
+    }
+
+    attachEvents() {
+        document.addEventListener('click', (e) => {
+            const preview = e.target.closest('.project-preview');
+            if (preview) {
+                e.preventDefault();
+                this.openGallery(preview.dataset.gallery);
+            }
+        });
+
+        this.closeButton.addEventListener('click', () => this.close());
+        this.modal.querySelector('.image-modal-overlay')
+            .addEventListener('click', () => this.close());
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') this.close();
+        });
+    }
+
+    openGallery(galleryId) {
+        const gallery = document.querySelector(
+            `.project-gallery-data[data-gallery="${galleryId}"]`
+        );
+
+        if (!gallery) return;
+
+        this.scrollContainer.innerHTML = '';
+
+        Array.from(gallery.children).forEach(item => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'modal-media-wrapper';
+
+            const clone = item.cloneNode(true);
+
+            if (clone.tagName === 'IFRAME') clone.setAttribute('loading', 'lazy');
+            if (clone.tagName === 'IMG') clone.setAttribute('loading', 'lazy');
+
+            wrapper.appendChild(clone);
+            this.scrollContainer.appendChild(wrapper);
+        });
+
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    close() {
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
