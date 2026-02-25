@@ -3,23 +3,23 @@
 Useful cheatsheets and reference materials.
 
 <div class="resources-grid">
-    <a href="assets/TransformerLens___PyTorch_Quick_Reference.pdf" class="resource-card">
+    <a href="assets/downloads/Navraj_K_Generic_Resume.pdf" class="resource-card">
         <div class="resource-preview">
-            <img src="assets/transformerlens_preview-1.png" alt="TransformerLens & PyTorch Quick Reference">
+            <img src="assets/Navraj_K_Generic_Resume.png" alt="My Generic Resume">
         </div>
-        <div class="resource-name">TransformerLens & PyTorch Quick Reference</div>
+        <div class="resource-name">My Generic Resume</div>
     </a>
-    <a href="assets/TransformerLens___PyTorch_Quick_Reference.tex" class="resource-card">
+    <a href="assets/downloads/ELEX7790_VineBot_Proposal_rr.pdf" class="resource-card">
         <div class="resource-preview">
-            <img src="assets/transformerlens_preview-1.png" alt="TransformerLens & PyTorch Quick Reference (LaTeX Source)">
+            <img src="assets/ELEX7790_VineBot_Proposal_rr.png" alt="ELEX7790 Capstone VineBot Proposal">
         </div>
-        <div class="resource-name">TransformerLens & PyTorch Quick Reference (LaTeX Source)</div>
+        <div class="resource-name">ELEX7790 Capstone VineBot Proposal</div>
     </a>
-    <a href="assets/TransformerLens___PyTorch_Quick_Reference.md" class="resource-card">
+    <a href="assets//downloads/ELEX7890_VineBot_Final_Report_rr.pdf" class="resource-card">
         <div class="resource-preview">
-            <img src="assets/transformerlens_preview-1.png" alt="TransformerLens & PyTorch Quick Reference (Markdown)">
+            <img src="assets/ELEX7890_VineBot_Final_Report_rr.png" alt="ELEX7790 Capstone VineBot Final Report">
         </div>
-        <div class="resource-name">TransformerLens & PyTorch Quick Reference (Markdown)</div>
+        <div class="resource-name">ELEX7890 Capstone VineBot Final Report</div>
     </a>
     <a href="assets/pyproject.toml" class="resource-card" download>
         <div class="resource-preview resource-preview-icon">
