@@ -83,7 +83,7 @@
     <div class="timeline-desc">Carried out Rack Acceptance Tests (RATs) for quality assurance purposes</div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item timeline-education">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
       <span class="timeline-org">British Columbia Institute of Technology</span>

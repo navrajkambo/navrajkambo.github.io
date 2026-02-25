@@ -1215,6 +1215,11 @@ html {
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 20%, transparent);
 }
 
+.timeline-education .timeline-dot {
+    background: var(--color-accent-2);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-link) 20%, transparent);
+}
+
 .timeline-header {
     display: flex;
     align-items: baseline;
