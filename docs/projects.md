@@ -23,33 +23,34 @@
 ## 2018
 
 <div class="project-card">
-    <div class="project-image">
-        <img src="assets/AgentBreederDiagramJPG.jpg"
+    <!-- <div class="project-image">
+        <img src="assets/writing utensil/launchpad-c2000-02.jpg"
             alt="Automated Writing Utensil"
             class="project-preview"
             data-gallery="utensil"
         >
-    </div>
+    </div> -->
     <div class="project-content">
         <h3 class="project-title">
             <a href="#" class="project-link" data-gallery="automated-writing">
                 Automated Writing Utensil
             </a>
         </h3>
-        <div class="project-venue">NeurIPS 2025 spotlight</div>
-        <div class="project-authors">J Rosser, Jakob Foerster</div>
-        <div class="project-year">2025</div>
+        <div class="project-venue">For my embedded systems term project, I designed and implemented a simple P-D controller for two Quanser SRV02 motors using a real-time embedded system (TMS320F28027). Parts were fabricated (PLA printing) to allow a pen to draw anywhere within a 36in2 square. This project involved interfacing the RTES to external hardware including power amplifiers and quadrature encoders, through the use of various communications standards (SPI & SCI for example).</div>
+        <div class="project-authors">N Kambo</div>
+        <div class="project-year">2018</div>
         <div class="project-tags">
-            <span class="tag tag-safety">Multi-Agent Safety</span>
-            <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
-            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a>
+            <span class="tag tag-safety">C/C++</span>
+            <span class="tag tag-safety">RTOS</span>
+            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
+            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->
         </div>
     </div>
 </div>
 <div class="project-card">
-    <div class="project-image">
+    <!-- <div class="project-image">
         <img src="assets/AgentBreederDiagramJPG.jpg" alt="AgentBreeder project">
-    </div>
+    </div> -->
     <div class="project-content">
         <h3 class="project-title">
             <a href="#" class="project-link" data-gallery="heat-exchanger">
@@ -67,9 +68,9 @@
     </div>
 </div>
 <div class="project-card">
-    <div class="project-image">
+    <!-- <div class="project-image">
         <img src="assets/AgentBreederDiagramJPG.jpg" alt="AgentBreeder project">
-    </div>
+    </div> -->
     <div class="project-content">
         <h3 class="project-title">
             <a href="#" class="project-link" data-gallery="audio-processor">
@@ -92,9 +93,9 @@
 ## 2017
 
 <div class="project-card">
-    <div class="project-image">
+    <!-- <div class="project-image">
         <img src="assets/AgentBreederDiagramJPG.jpg" alt="AgentBreeder project">
-    </div>
+    </div> -->
     <div class="project-content">
         <h3 class="project-title">
             <a href="#" class="project-link" data-gallery="maze-car">
@@ -118,7 +119,8 @@
     <img src="assets/autonomous vineyard/2.jpg" alt="">
     <img src="assets/autonomous vineyard/3.png" alt="">
     <img src="assets/autonomous vineyard/4.png" alt="">
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    <iframe width="580" height="320" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="https://gallery.autodesk.com/projects/141623/assets/482261/embed"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ssWetc3PHkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </div>
 <div class="project-gallery-data" data-gallery="automated-writing">
     <img src="assets/writing utensil/launchpad-c2000-02.jpg" alt="">
@@ -132,6 +134,7 @@
     <img src="assets/writing utensil/sim_4.png" alt="">
     <img src="assets/writing utensil/sim_5.png" alt="">
     <img src="assets/writing utensil/sim_6.png" alt="">
+    <iframe width="580" height="320" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="https://gallery.autodesk.com/projects/141620/assets/482246/embed"></iframe>
 </div>
 <div class="project-gallery-data" data-gallery="heat-exchanger">
     <img src="assets/heatexchanger/1.png" alt="">
@@ -145,6 +148,7 @@
     <img src="assets/mazecar/1.jpg" alt="">
     <img src="assets/mazecar/2.PNG" alt="">
     <img src="assets/mazecar/3.PNG" alt="">
+    <iframe width="580" height="320" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="https://gallery.autodesk.com/projects/141619/assets/482244/embed"></iframe>
 </div>
 <div class="project-gallery-data" data-gallery="audio-processor">
     <img src="assets/audio/TB_Simulation.png" alt="">

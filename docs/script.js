@@ -823,9 +823,13 @@ class ProjectImageViewer {
         } else {
             this.track.style.transition = 'none';
         }
+        
+        const slideWidth = this.modal.querySelector('.image-modal-content').clientWidth;
+        const offset = slideWidth * this.currentIndex;
 
-        this.track.style.transform =
-            `translateX(-${this.currentIndex * 100}%)`;
+        this.track.style.transform = `translateX(-${offset}px)`;
+        // this.track.style.transform =
+        //     `translateX(-${this.currentIndex * 100}%)`;
     }
 
     next() {
