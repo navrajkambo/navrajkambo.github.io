@@ -14,8 +14,8 @@
         <div class="project-year">2019</div>
         <div class="project-tags">
             <span class="tag tag-safety">Robotics, Machine Vision</span>
-            <a href="" class="tag tag-arxiv">
-            PREPRINT COMING SOON!</a>
+            <a href="https://github.com/terrycalderbank/vinebot_ml" class="tag tag-arxiv">GITHUB</a>
+            <a href="https://github.com/terrycalderbank/soe-vinebot" class="tag tag-github">GITHUB</a>
         </div>
     </div>
 </div>
@@ -63,8 +63,6 @@
             <span class="tag tag-safety">Industrial Control Systems</span>
             <span class="tag tag-safety">DCS</span>
             <span class="tag tag-safety">P&ID</span>
-            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
-            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->
         </div>
     </div>
 </div>
@@ -74,7 +72,7 @@
     </div>
     <div class="project-content">
         <h3 class="project-title">
-            <a href="/AgentBreeder" class="project-link">
+            <a href="#" class="project-link" data-gallery="audio-processor">
                 DE1-SoC Hardware Audio
             </a>
         </h3>
@@ -82,9 +80,11 @@
         <div class="project-authors">B Pham, N Kambo</div>
         <div class="project-year">2018</div>
         <div class="project-tags">
-            <span class="tag tag-safety">Multi-Agent Safety</span>
-            <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
-            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a>
+            <span class="tag tag-safety">System Verilog</span>
+            <span class="tag tag-safety">PCBA</span>
+            <span class="tag tag-safety">Digital Design</span>
+            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a> -->
+            <a href="https://github.com/navrajkambo/De1-SoC-Verilog-Audio-HW-FX" class="tag tag-github">GITHUB</a>
         </div>
     </div>
 </div>
@@ -147,10 +147,13 @@
     <img src="assets/mazecar/3.PNG" alt="">
 </div>
 <div class="project-gallery-data" data-gallery="audio-processor">
-    <img src="assets/heatexchanger/1.png" alt="">
-    <img src="assets/heatexchanger/2.png" alt="">
-    <img src="assets/heatexchanger/3.jpg" alt="">
-    <img src="assets/heatexchanger/4.jpg" alt="">
-    <img src="assets/heatexchanger/5.jpg" alt="">
-    <img src="assets/heatexchanger/6.jpg" alt="">
+    <img src="assets/audio/TB_Simulation.png" alt="">
+    <img src="assets/audio/WolfsonWM8731PCB_alt.png" alt="">
+    <img src="assets/audio/WolfsonWM8731PCB_1.png" alt="">
+    <img src="assets/audio/WolfsonWM8731PCB_2.png" alt="">
+    <img src="assets/audio/WolfsonWM8731PCB_3.png" alt="">
+    <img src="assets/audio/WolfsonWM8731PCB_4.png" alt="">
+    <img src="assets/audio/WolfsonWM8731Schem.png" alt="">
+    <img src="assets/audio/PCB_Front_alt.png" alt="">
+    <img src="assets/audio/PCB_Back_alt.png" alt="">
 </div>
