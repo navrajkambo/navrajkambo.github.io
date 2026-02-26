@@ -733,18 +733,26 @@ prefersReducedMotion.addEventListener('change', () => {
 class ProjectImageViewer {
     constructor() {
         this.modal = document.getElementById('image-modal');
-        this.scrollContainer = this.modal.querySelector('.image-modal-scroll');
+        this.track = this.modal.querySelector('.image-modal-scroll');
         this.closeButton = this.modal.querySelector('.image-modal-close');
+        this.prevButton = this.modal.querySelector('.carousel-prev');
+        this.nextButton = this.modal.querySelector('.carousel-next');
+
+        this.currentIndex = 0;
+        this.slides = [];
+        this.isDragging = false;
+        this.startX = 0;
+        this.currentTranslate = 0;
 
         this.attachEvents();
     }
 
     attachEvents() {
         document.addEventListener('click', (e) => {
-            const preview = e.target.closest('.project-preview');
-            if (preview) {
+            const trigger = e.target.closest('[data-gallery]');
+            if (trigger) {
                 e.preventDefault();
-                this.openGallery(preview.dataset.gallery);
+                this.openGallery(trigger.dataset.gallery);
             }
         });
 
@@ -752,35 +760,150 @@ class ProjectImageViewer {
         this.modal.querySelector('.image-modal-overlay')
             .addEventListener('click', () => this.close());
 
+        this.prevButton.addEventListener('click', () => this.prev());
+        this.nextButton.addEventListener('click', () => this.next());
+
         document.addEventListener('keydown', (e) => {
+            if (!this.modal.classList.contains('active')) return;
+
             if (e.key === 'Escape') this.close();
+            if (e.key === 'ArrowRight') this.next();
+            if (e.key === 'ArrowLeft') this.prev();
         });
+
+        // Swipe support
+        // this.track.addEventListener('pointerdown', this.startDrag.bind(this));
+        // this.track.addEventListener('pointermove', this.drag.bind(this));
+        // this.track.addEventListener('pointerup', this.endDrag.bind(this));
+        // this.track.addEventListener('pointerleave', this.endDrag.bind(this));
+        // Enable swipe only on touch devices
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            this.track.addEventListener('touchstart', this.startTouch.bind(this), { passive: true });
+            this.track.addEventListener('touchmove', this.touchMove.bind(this), { passive: true });
+            this.track.addEventListener('touchend', this.endTouch.bind(this));
+        }
     }
 
     openGallery(galleryId) {
         const gallery = document.querySelector(
             `.project-gallery-data[data-gallery="${galleryId}"]`
         );
-
         if (!gallery) return;
 
-        this.scrollContainer.innerHTML = '';
+        this.track.innerHTML = '';
+        this.currentIndex = 1;
 
-        Array.from(gallery.children).forEach(item => {
+        const items = Array.from(gallery.children);
+
+        // Clone last & first for infinite loop
+        const firstClone = items[0].cloneNode(true);
+        const lastClone = items[items.length - 1].cloneNode(true);
+
+        this.track.appendChild(lastClone);
+
+        items.forEach(item => {
             const wrapper = document.createElement('div');
             wrapper.className = 'modal-media-wrapper';
-
-            const clone = item.cloneNode(true);
-
-            if (clone.tagName === 'IFRAME') clone.setAttribute('loading', 'lazy');
-            if (clone.tagName === 'IMG') clone.setAttribute('loading', 'lazy');
-
-            wrapper.appendChild(clone);
-            this.scrollContainer.appendChild(wrapper);
+            wrapper.appendChild(item.cloneNode(true));
+            this.track.appendChild(wrapper);
         });
+
+        this.track.appendChild(firstClone);
+
+        this.slides = this.track.children;
+        this.updatePosition(false);
 
         this.modal.classList.add('active');
         document.body.style.overflow = 'hidden';
+    }
+
+    updatePosition(animate = true) {
+        if (animate) {
+            this.track.style.transition = 'transform 0.4s ease';
+        } else {
+            this.track.style.transition = 'none';
+        }
+
+        this.track.style.transform =
+            `translateX(-${this.currentIndex * 100}%)`;
+    }
+
+    next() {
+        this.currentIndex++;
+        this.updatePosition(true);
+        this.checkLoop();
+    }
+
+    prev() {
+        this.currentIndex--;
+        this.updatePosition(true);
+        this.checkLoop();
+    }
+
+    checkLoop() {
+        setTimeout(() => {
+            if (this.currentIndex === 0) {
+                this.currentIndex = this.slides.length - 2;
+                this.updatePosition(false);
+            }
+            if (this.currentIndex === this.slides.length - 1) {
+                this.currentIndex = 1;
+                this.updatePosition(false);
+            }
+        }, 400);
+    }
+
+    startDrag(e) {
+        this.isDragging = true;
+        this.startX = e.clientX;
+        this.track.style.transition = 'none';
+    }
+
+    drag(e) {
+        if (!this.isDragging) return;
+        const delta = e.clientX - this.startX;
+        this.track.style.transform =
+            `translateX(calc(-${this.currentIndex * 100}% + ${delta}px))`;
+    }
+
+    endDrag(e) {
+        if (!this.isDragging) return;
+        this.isDragging = false;
+
+        const delta = e.clientX - this.startX;
+
+        if (delta > 50) this.prev();
+        else if (delta < -50) this.next();
+        else this.updatePosition(true);
+    }
+
+    startTouch(e) {
+        this.startX = e.touches[0].clientX;
+        this.isDragging = true;
+        this.track.style.transition = 'none';
+    }
+
+    touchMove(e) {
+        if (!this.isDragging) return;
+
+        const currentX = e.touches[0].clientX;
+        const delta = currentX - this.startX;
+
+        this.track.style.transform =
+            `translateX(calc(-${this.currentIndex * 100}% + ${delta}px))`;
+    }
+
+    endTouch(e) {
+        if (!this.isDragging) return;
+
+        this.isDragging = false;
+
+        const endX = e.changedTouches[0].clientX;
+        const delta = endX - this.startX;
+
+        if (delta > 50) this.prev();
+        else if (delta < -50) this.next();
+        else this.updatePosition(true);
     }
 
     close() {
