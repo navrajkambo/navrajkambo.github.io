@@ -19,7 +19,7 @@
     <div class="timeline-header">
       <span class="timeline-org">Delta Intelligent Building Technologies (Canada) Inc</span>
       <span class="timeline-role">Test and Automation Engineer (EIT)</span>
-      <span class="timeline-dates">Apr 2023 - Pres</span>
+      <span class="timeline-dates">Apr 2023 - <strong class="text-accent">Present</strong></span>
     </div>
     <div class="timeline-meta">Surrey, BC • Hybrid</div>
     <div class="timeline-desc">Design and fabrication of bed of nails test jigs and fixtures in Solidworks for PCBA testing</div>
