@@ -369,7 +369,7 @@ class MarkdownLoader {
     }
 }
 
-// Hover effect for letter 'b' and 'B'
+// Hover effect for letter 'n' and 'N'
 (function() {
     function applyBHoverEffect(root) {
         const targetRoot = root || document.body;
@@ -381,7 +381,7 @@ class MarkdownLoader {
             {
                 acceptNode(node) {
                     const value = node.nodeValue;
-                    if (!value || (value.indexOf('b') === -1 && value.indexOf('B') === -1)) {
+                    if (!value || (value.indexOf('n') === -1 && value.indexOf('N') === -1)) {
                         return NodeFilter.FILTER_REJECT;
                     }
                     const parent = node.parentNode;
@@ -411,7 +411,7 @@ class MarkdownLoader {
 
             for (let i = 0; i < text.length; i++) {
                 const ch = text[i];
-                if (ch === 'b' || ch === 'B') {
+                if (ch === 'n' || ch === 'N') {
                     if (buffer) {
                         fragment.appendChild(document.createTextNode(buffer));
                         buffer = '';
@@ -438,7 +438,7 @@ class MarkdownLoader {
     window.applyBHoverEffect = applyBHoverEffect;
 })();
 
-// Bee spawning when clicking on a 'b'/'B'
+// Bee spawning when clicking on a 'n'/'N'
 (function() {
     function spawnBeeFromElement(el) {
         const rect = el.getBoundingClientRect();
