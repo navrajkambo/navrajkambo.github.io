@@ -4,15 +4,15 @@
 
 <div class="timeline">
 
-<!-- <div class="timeline-item">
+  <div class="timeline-item timeline-education">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
       <span class="timeline-org">University of British Columbia</span>
-      <span class="timeline-role">DPhil in Machine Learning</span>
-      <span class="timeline-dates">Oct 2024 – <strong class="text-accent">Present</strong></span>
+      <span class="timeline-role">Master of Engineering, Electrical & Computer Engineering</span>
+      <span class="timeline-dates">Sep 2026 – Present</span>
     </div>
-    <div class="timeline-desc">AI Security and Safety research supervised by Jakob Foerster.</div>
-  </div> -->
+    <div class="timeline-meta">Computer Systems, Energy Utilization, Signal Processing</div>
+  </div>
 
   <div class="timeline-item">
     <span class="timeline-dot"></span>

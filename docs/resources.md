@@ -3,11 +3,23 @@
 Useful cheatsheets and reference materials.
 
 <div class="resources-grid">
+    <a href="assets/downloads/NK-Presentation-Generic-Portfolio.pdf" class="resource-card" target="_blank">
+        <div class="resource-preview">
+            <img src="assets/NK-Presentation-Generic-Portfolio.png" alt="Generic Portfolio">
+        </div>
+        <div class="resource-name">My Generic Portfolio</div>
+    </a>
     <a href="assets/downloads/Navraj_K_Generic_Resume.pdf" class="resource-card" download>
         <div class="resource-preview">
             <img src="assets/Navraj_K_Generic_Resume.png" alt="My Generic Resume">
         </div>
         <div class="resource-name">My Generic Resume</div>
+    </a>
+    <a href="assets/downloads/Navraj_S_PS_Gradschool.pdf" class="resource-card" download>
+        <div class="resource-preview">
+            <img src="assets/Navraj_S_PS_Gradschool.png" alt="Grad School Personal Statement">
+        </div>
+        <div class="resource-name">My Grad School Personal Statement</div>
     </a>
     <a href="assets/downloads/ELEX7790_VineBot_Proposal_rr.pdf" class="resource-card" target="_blank">
         <div class="resource-preview">
@@ -20,18 +32,6 @@ Useful cheatsheets and reference materials.
             <img src="assets/ELEX7890_VineBot_Final_Report_rr.png" alt="ELEX7790 Capstone VineBot Final Report">
         </div>
         <div class="resource-name">ELEX7890 Capstone VineBot Final Report</div>
-    </a>
-    <a href="assets/downloads/NK-Presentation-Generic-Portfolio.pdf" class="resource-card" target="_blank">
-        <div class="resource-preview">
-            <img src="assets/NK-Presentation-Generic-Portfolio.png" alt="Generic Portfolio">
-        </div>
-        <div class="resource-name">My Generic Portfolio</div>
-    </a>
-    <a href="assets/downloads/Navraj_S_PS_Gradschool.pdf" class="resource-card" download>
-        <div class="resource-preview">
-            <img src="assets/Navraj_S_PS_Gradschool.png" alt="Grad School Personal Statement">
-        </div>
-        <div class="resource-name">My Grad School Personal Statement</div>
     </a>
     <a href="assets/downloads/Certificate of Training_Navraj Kambo.pdf" class="resource-card" download>
         <div class="resource-preview resource-preview-icon">

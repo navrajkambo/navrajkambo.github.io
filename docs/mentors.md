@@ -9,7 +9,7 @@ My paternal grandfather, Amarjit Singh, was a highly skilled machinist in India,
 
 One of the reasons I decided to become an engineer, was so that I could be more like him! He often made it a point to ask about my career and educational goals, and was always very fond of my choice to become an engineer.
 <div class="about-header">
-  <img src="https://media.licdn.com/dms/image/v2/C5103AQE1I7o4Mj6Usw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516716830569?e=1773878400&v=beta&t=rQviT2rSlNeSFXYgWjLaZ66k46suvbq7IPubsMyThus" alt="Portrait of A S Kambo" class="about-avatar" width="320" height="320" loading="lazy" />
+  <img src="assets/ibrahim adamu.jfif" alt="Portrait of Mr. I Adamu" class="about-avatar" width="320" height="320" loading="lazy" />
   <div class="about-header-content">
     <h3 class="title">Ibrahim Adamu</h3>
   </div>
@@ -18,7 +18,7 @@ Mr Adamu was my Electronics teacher while I attended Burnaby Central Secondary s
 
 Mr Adamu was one of the first mentors I had that encouraged me to explore electronics and engineering further at the undergraduate level.
 <div class="about-header">
-  <img src="assets/profile.jpg" alt="Portrait of A S Kambo" class="about-avatar" width="320" height="320" loading="lazy" />
+  <img src="assets/profile.jpg" alt="Portrait of A Ebrahimzadeh" class="about-avatar" width="320" height="320" loading="lazy" />
   <div class="about-header-content">
     <h3 class="title">Azim Ebrahimzadeh</h3>
   </div>
