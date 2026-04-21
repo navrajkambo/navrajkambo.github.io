@@ -32,7 +32,7 @@
 
 
 
-I'm a 28 year old **Electronics/Mechatronics Engineer (EIT) from Burnaby BC**. Professionally, I've worked on things ranging from writing **firmware and low level drivers for (ARM based) MCU and peripheral products**, to helping design and comission **electrical systems for wood drying kilns in the lumber industry**, to designing and building **robotic cells for the food and beverage industry**.
+I'm a 29 year old **Electronics/Mechatronics Engineer (EIT) from Burnaby BC**. Professionally, I've worked on things ranging from writing **firmware and low level drivers for (ARM based) MCU and peripheral products**, to helping design and comission **electrical systems for wood drying kilns in the lumber industry**, to designing and building **robotic cells for the food and beverage industry**.
 
 I'm currently working at **Delta Intelligent Building Technologies (Canada) Inc** as part of the **Test and Automation Group** - a multi-disciplined group consisting of mechanical, electrical, software, and firmware designers. The team is responsible for creating and maintaining the testing infrastructure used in Manufacturing, as well as improving operational efficiency, shortening test time, and improving yields through automated test fixtures and assembly line tools. Our team works on products from initial concept to physical realization.
 
