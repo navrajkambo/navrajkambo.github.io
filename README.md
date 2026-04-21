@@ -20,6 +20,9 @@ My personal portfolio website showcasing research in AI Safety and Machine Learn
 ```bash
 # Serve locally
 python -m http.server 8000 -d docs/
+
+# Hard Refresh
+CTRL + F5
 ```
 
 ## Structure
