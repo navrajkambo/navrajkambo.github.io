@@ -9,7 +9,7 @@
     <div class="timeline-header">
       <span class="timeline-org">University of British Columbia</span>
       <span class="timeline-role">Master of Engineering, Electrical & Computer Engineering</span>
-      <span class="timeline-dates">Sep 2026 – Present</span>
+      <span class="timeline-dates">Sep 2026 (Est.)</span>
     </div>
     <div class="timeline-meta">Computer Systems, Energy Utilization, Signal Processing</div>
   </div>
