@@ -793,22 +793,25 @@ class ProjectImageViewer {
         this.track.innerHTML = '';
         this.currentIndex = 1;
 
-        const items = Array.from(gallery.children);
+        const items = Array.from(gallery.querySelectorAll('img, iframe'));
 
-        // Clone last & first for infinite loop
-        const firstClone = items[0].cloneNode(true);
-        const lastClone = items[items.length - 1].cloneNode(true);
-
-        this.track.appendChild(lastClone);
-
-        items.forEach(item => {
+        const createSlide = (item) => {
             const wrapper = document.createElement('div');
             wrapper.className = 'modal-media-wrapper';
             wrapper.appendChild(item.cloneNode(true));
-            this.track.appendChild(wrapper);
+            return wrapper;
+        };
+
+        // Clone last slide for infinite loop
+        this.track.appendChild(createSlide(items[items.length - 1]));
+
+        // Real slides
+        items.forEach(item => {
+            this.track.appendChild(createSlide(item));
         });
 
-        this.track.appendChild(firstClone);
+        // Clone first slide for infinite loop
+        this.track.appendChild(createSlide(items[0]));
 
         this.slides = this.track.children;
         this.updatePosition(false);
@@ -818,18 +821,8 @@ class ProjectImageViewer {
     }
 
     updatePosition(animate = true) {
-        if (animate) {
-            this.track.style.transition = 'transform 0.4s ease';
-        } else {
-            this.track.style.transition = 'none';
-        }
-        
-        const slideWidth = this.modal.querySelector('.image-modal-content').clientWidth;
-        const offset = slideWidth * this.currentIndex;
-
-        this.track.style.transform = `translateX(-${offset}px)`;
-        // this.track.style.transform =
-        //     `translateX(-${this.currentIndex * 100}%)`;
+        this.track.style.transition = animate ? 'transform 0.4s ease' : 'none';
+        this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
     }
 
     next() {
