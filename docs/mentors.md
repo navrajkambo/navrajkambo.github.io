@@ -9,7 +9,7 @@ My paternal grandfather, Amarjit Singh, was a highly skilled machinist in India,
 
 One of the reasons I decided to become an engineer, was so that I could be more like him! He often made it a point to ask about my career and educational goals, and was always very fond of my choice to become an engineer.
 <div class="about-header">
-  <img src="assets/ibrahim adamu.jfif" alt="Portrait of Mr. I Adamu" class="about-avatar" width="320" height="320" loading="lazy" />
+  <img src="assets/i_adamu.jpeg" alt="Portrait of Mr. I Adamu" class="about-avatar" width="320" height="320" loading="lazy" />
   <div class="about-header-content">
     <h3 class="title">Ibrahim Adamu</h3>
   </div>
