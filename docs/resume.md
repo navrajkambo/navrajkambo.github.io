@@ -83,6 +83,19 @@
     <div class="timeline-desc">Carried out Rack Acceptance Tests (RATs) for quality assurance purposes</div>
   </div>
 
+  <div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-header">
+      <span class="timeline-org">BKS Cablecom Ltd.</span>
+      <span class="timeline-role">Jr. Technician</span>
+      <span class="timeline-dates">May 2016 - Aug 2016</span>
+    </div>
+    <div class="timeline-meta">Burnaby, BC • On-site</div>
+    <div class="timeline-desc">Installed and tested data cabling for data and voice systems</div>
+    <div class="timeline-desc">Labeled and assembled patch panel assemblies, and upgraded wireless networking equipment</div>
+    <div class="timeline-desc">Worked along-side Sr Technicians, Electricians and UBC IT services on various construction projects</div>
+  </div>
+
   <div class="timeline-item timeline-education">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
