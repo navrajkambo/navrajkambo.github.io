@@ -6,7 +6,7 @@ My personal portfolio website showcasing my work experience in Electronics, Robo
 
 ## Preview
 
-![Portfolio Screenshot](docs/assets/screenshot.png)
+![Portfolio Screenshot](assets/screenshot.png)
 
 
 ## Tech Stack
