@@ -18,11 +18,35 @@ Mr Adamu was my Electronics teacher while I attended Burnaby Central Secondary s
 
 Mr Adamu was one of the first mentors I had that encouraged me to explore electronics and engineering further at the undergraduate level.
 <div class="about-header">
-  <img src="assets/profile.jpg" alt="Portrait of A Ebrahimzadeh" class="about-avatar" width="320" height="320" loading="lazy" />
+    <svg
+        class="about-avatar"
+        width="320"
+        height="320"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        role="img"
+        aria-label="Engineer mentor avatar">
+        <!-- Engineer's hard hat -->
+        <path d="M5 9a7 7 0 0 1 14 0" />
+        <path d="M12 3v6" />
+        <path d="M3.5 9h17" />
+    
+        <!-- Face -->
+        <path d="M6.5 9v3a5.5 5.5 0 0 0 11 0V9" />
+    
+        <!-- Shoulders and torso -->
+        <path d="M9 17v2l3 2 3-2v-2" />
+        <path d="M9 18l-3.5 1.5A4 4 0 0 0 3 23" />
+        <path d="M15 18l3.5 1.5A4 4 0 0 1 21 23" />
+</svg>
   <div class="about-header-content">
     <h3 class="title">Azim Ebrahimzadeh</h3>
   </div>
 </div>
-Azim was my neighbour for the first 22 years of my life. An engineer by trade, he was always very proud of my choice to study engineering at BCIT, as he too had completed his degree in engineering there. Working at BC Hydro, Azims career in engineering was anything but typical! He had studied engineering in Iran before leaving and eventually ending up in Canada. As his credentials didn't transfer, Azim worked in the mail room at BC Hydro while attending night school. After count-less hours of studying on top of working a full-time job and caring for his family, he eventually earned his credentials and his Professional Engineering license with EGBC. He often told me about his work as an engineer at the BC Hydro Burnaby Office, and always spoke highly of the profession.
+Azim was my neighbour for the first 22 years of my life. An engineer by trade, he was always very proud of my choice to study engineering at BCIT, as he too had completed his degree in engineering there.<!-- Working at BC Hydro, Azims career in engineering was anything but typical! He had studied engineering in Iran before leaving and eventually ending up in Canada. As his credentials didn't transfer, Azim worked in the mail room at BC Hydro while attending night school. After count-less hours of studying on top of working a full-time job and caring for his family, he eventually earned his credentials and his Professional Engineering license with EGBC. --> He often told me about his work as an engineer at the BC Hydro Burnaby Office, and always spoke highly of the profession.
 
 Azim's encouragement and praises made me want to become and engineer!
