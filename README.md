@@ -19,7 +19,7 @@ My personal portfolio website showcasing my work experience in Electronics, Robo
 
 ```bash
 # Serve locally
-python -m http.server 8000 -d docs/
+python -m http.server 8000 -d
 
 # Hard Refresh
 CTRL + F5
@@ -27,9 +27,9 @@ CTRL + F5
 
 ## Structure
 
-- `docs/index.html` - Main page
-- `docs/*.md` - Content (about, projects, resume)
-- `docs/styles.css` - Styling
-- `docs/script.js` - Functionality
+- `/index.html` - Main page
+- `/*.md` - Content (about, projects, resume)
+- `/styles.css` - Styling
+- `/script.js` - Functionality
 
 Inspired by [astro-theme-cactus](https://astro-cactus.chriswilliams.dev/) :)
