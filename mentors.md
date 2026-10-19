@@ -2,7 +2,7 @@
 <div class="about-header">
   <img src="assets/amarjit_nav (cropped).jpg" alt="Portrait of A S Kambo" class="about-avatar" width="320" height="320" loading="lazy" />
   <div class="about-header-content">
-    <h3 class="title">Amarjit Singh Kambo (ਅਮਰਜੀਤ ਸਿੰਘ ਕੰਬੋ)</h3>
+    <h3 class="title">Amarjit Singh Kambo (<span lang="pa">ਅਮਰਜੀਤ ਸਿੰਘ ਕੰਬੋ</span>)</h3>
   </div>
 </div>
 My paternal grandfather, Amarjit Singh, was a highly skilled machinist in India, and moved to Canada in the 1990's, where he began working at a furniture shop making custom wooden furniture. His touch can be seen all throughout our house, including the bed frames he made for us, and the various picture frames and mirrors he hung up. Whenever there was something that needed to be fixed or made, my grandfather was the person to come up with a simple solution.
