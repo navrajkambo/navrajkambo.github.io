@@ -3,7 +3,7 @@
 Useful cheatsheets and reference materials.
 
 <div class="resources-grid">
-    <a href="assets/downloads/NK-Presentation-Generic-Portfolio.pdf" class="resource-card" target="_blank">
+    <a href="https://www.icloud.com/iclouddrive/0270jg6XoqwClaMAEufq7OWlg#NK-Presentation-Generic-Portfolio" class="resource-card" target="_blank">
         <div class="resource-preview">
             <img src="assets/NK-Presentation-Generic-Portfolio.png" alt="Generic Portfolio">
         </div>
@@ -15,7 +15,7 @@ Useful cheatsheets and reference materials.
         </div>
         <div class="resource-name">My Generic Resume</div>
     </a>
-    <a href="assets/downloads/Navraj_S_PS_Gradschool.pdf" class="resource-card" download>
+    <a href="https://www.icloud.com/iclouddrive/09dYmpeG4uP7mFbpl7EwpNYyg#Navraj%5FS%5FPS%5FGradschool" class="resource-card" target="_blank">
         <div class="resource-preview">
             <img src="assets/Navraj_S_PS_Gradschool.png" alt="Grad School Personal Statement">
         </div>
