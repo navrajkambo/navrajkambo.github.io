@@ -49,4 +49,4 @@ Mr Adamu was one of the first mentors I had that encouraged me to explore electr
 </div>
 Azim was my neighbour for the first 22 years of my life. An engineer by trade, he was always very proud of my choice to study engineering at BCIT, as he too had completed his degree in engineering there.<!-- Working at BC Hydro, Azims career in engineering was anything but typical! He had studied engineering in Iran before leaving and eventually ending up in Canada. As his credentials didn't transfer, Azim worked in the mail room at BC Hydro while attending night school. After count-less hours of studying on top of working a full-time job and caring for his family, he eventually earned his credentials and his Professional Engineering license with EGBC. --> He often told me about his work as an engineer at the BC Hydro Burnaby Office, and always spoke highly of the profession.
 
-Azim's encouragement and praises made me want to become and engineer!
+Azim's encouragement and praises made me want to become an engineer!
