@@ -1,4 +1,25 @@
 # Projects
+## 2026
+
+<div class="project-card">
+    <div class="project-content">
+        <h3 class="project-title">
+            <a href="#" class="project-link" data-gallery="pushT">
+                Comparing MLP, LSTM, and Transformer Policies
+for Robot Imitation Learning on PushT
+            </a>
+        </h3>
+        <div class="project-venue">For our UBC EECE 568 project, we propose to study how the choice of neural network changes the quality of a robot policy learned from human demonstrations (imitation learning / behavioural cloning). Using the public PushT dataset (a pusher moves a T-shaped block onto a target), we proposed training three policies that map recent observations to actions: a feed-forward network (Multi-Layer Perceptrons, MLP), a recurrent neural network (Long short-term memory, LSTM), and a small Transformer.</div>
+        <div class="project-authors">M Sharifzadeh, N Kambo</div>
+        <div class="project-year">2026</div>
+        <div class="project-tags">
+            <span class="tag tag-safety">Robotics, Machine Learning, MLP, LSTM, Transformer</span>
+            <a href="https://github.com/navrajkambo/MLP_LSTM_XFMR-Policies-for-Robot-Imitation-Learning-on-PushT" class="tag tag-arxiv" target="_blank">GITHUB</a>
+            <a href="assets/downloads/EECE568_Proposal.pdf" class="tag tag-github" target="_blank">PROPOSAL</a>
+            <a href="assets/downloads/ECE568_MLP_LSTM_XFMR-Policies-for-Robot-Imitation-Learning-on-PushT_ProjectUpdate.pdf" class="tag tag-safety" target="_blank">UPDATE</a>
+        </div>
+    </div>
+</div>
 
 ## 2019
 
@@ -114,6 +135,14 @@
     </div>
 </div>
 
+<div class="project-gallery-data" data-gallery="pushT">
+    <img src="assets/pusht/1.png" alt="">
+    <img src="assets/pusht/2.png" alt="">
+    <img src="assets/pusht/3.png" alt="">
+    <img src="assets/pusht/4.png" alt="">
+    <img src="assets/pusht/5.png" alt="">
+    <img src="assets/pusht/6.png" alt="">
+</div>
 <div class="project-gallery-data" data-gallery="autonomous-vineyard">
     <img src="assets/autonomous vineyard/1.jpg" alt="">
     <img src="assets/autonomous vineyard/2.jpg" alt="">
