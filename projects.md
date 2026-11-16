@@ -164,6 +164,7 @@ for Robot Imitation Learning on PushT
     <img src="assets/robocode/2.png" alt="">
     <img src="assets/robocode/3.png" alt="">
     <img src="assets/robocode/4.png" alt="">
+    <img src="assets/robocode/5.png" alt="">
 </div>
 <div class="project-gallery-data" data-gallery="autonomous-vineyard">
     <img src="assets/autonomous vineyard/1.jpg" alt="">
