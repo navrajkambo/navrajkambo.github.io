@@ -24,15 +24,15 @@ for Robot Imitation Learning on PushT
     <div class="project-content">
         <h3 class="project-title">
             <a href="#" class="project-link" data-gallery="robocode">
-                Using Backpropagation and Reinforced (Q) Learning to automate Robocode Royale
+                Using Backpropagation and Reinforcement (Q) Learning to automate Robocode Royale
             </a>
         </h3>
-        <div class="project-venue">For my UBC CPEN 502 project, I was tasked with creating a neural network (from scratch) to learn the XOR function. I was then tasked to create a look-up table and update the Q function state space using rienforced learning (also from scratch). Finally, I'm in the process of putting these together, so that I can have an MLP network feeding into an RL algorithm. This combined network will tell my robot what to do to achieve the highest probability of success (winning the tank battle). I've chosen to train my robot tank against a single opponent, "Tracker".</div>
+        <div class="project-venue">For my UBC CPEN 502 project, I was tasked with creating a neural network (from scratch) to learn the XOR function. I was then tasked to create a look-up table and update the Q-function state space using reinforcement learning (also from scratch). Finally, I'm in the process of putting these together, so that I can have an MLP network feeding into an RL algorithm. This combined network will tell my robot what to do to achieve the highest probability of success (winning the tank battle). I've chosen to train my robot tank against a single opponent, "Tracker".</div>
         <div class="project-authors">N Kambo</div>
         <div class="project-year">2026</div>
         <div class="project-tags">
             <span class="tag tag-safety">Robotics, Machine Learning, MLP</span>
-            <span class="tag tag-safety">Reinforced Learning, RL, Q-Learning</span>
+            <span class="tag tag-safety">Reinforcement Learning, RL, Q-Learning</span>
             <a href="https://github.com/navrajkambo/CPEN502_26-27" class="tag tag-arxiv" target="_blank">GITHUB</a>
         </div>
     </div>
